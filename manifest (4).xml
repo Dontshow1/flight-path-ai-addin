@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" 
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+           xsi:type="TaskPaneApp">
+  <Id>12345678-abcd-1234-abcd-123456789abc</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>Your Name</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Flight Path AI Add-in"/>
+  <Description DefaultValue="An add-in to generate feedback and quizzes using OpenAI."/>
+  <IconUrl DefaultValue="https://dontshow1.github.io/flight-path-ai-addin/icon.png"/>
+  <HighResolutionIconUrl DefaultValue="https://dontshow1.github.io/flight-path-ai-addin/icon.png"/>
+  <SupportUrl DefaultValue="https://dontshow1.github.io/flight-path-ai-addin/support.html"/>
+
+  <AppDomains>
+    <AppDomain>https://dontshow1.github.io</AppDomain>
+  </AppDomains>
+
+  <Hosts>
+    <Host Name="Document"/>
+  </Hosts>
+
+  <Requirements>
+    <Sets DefaultMinVersion="1.1">
+      <Set Name="WordApi"/>
+    </Sets>
+  </Requirements>
+
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://dontshow1.github.io/flight-path-ai-addin/taskpane.html"/>
+  </DefaultSettings>
+
+  <Permissions>ReadWriteDocument</Permissions>
+</OfficeApp>
